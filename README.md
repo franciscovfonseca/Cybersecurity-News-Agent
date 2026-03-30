@@ -216,7 +216,7 @@ Cybersecurity-News-Agent/
 
 <div align="center">
 
-**franciscovfonseca** · [GitHub](https://github.com/franciscovfonseca) · [LinkedIn](https://linkedin.com/in/intfranciscofonseca)
+**franciscovfonseca** · [GitHub](https://github.com/franciscovfonseca) · [LinkedIn](https://www.linkedin.com/in/franciscovfonseca/)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
