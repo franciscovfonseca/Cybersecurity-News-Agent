@@ -8,9 +8,7 @@
 [![RSS](https://img.shields.io/badge/RSS-5%20Sources-FFA500?style=for-the-badge&logo=rss&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**An agentic AI tool that aggregates, analyzes, and rates cybersecurity news — delivering actionable intelligence directly to a Notion workspace.**
-
-[Features](#-features) · [Architecture](#-architecture) · [Rating System](#-rating-system) · [Data Sources](#-data-sources)
+**An agentic AI tool that aggregates, analyzes and rates cybersecurity news - delivering actionable intelligence directly to a Notion workspace.**
 
 </div>
 
@@ -18,11 +16,17 @@
 
 ## 📌 Project Overview
 
-I built an **AI-powered cybersecurity news aggregator** using Claude Code that automatically collects articles from trusted security sources, analyzes each one for relevance and actionability, and delivers rated summaries directly to a Notion database.
+In this Project I built an **AI-powered cybersecurity news aggregator** using Claude Code that automatically collects articles from trusted security sources, analyzes each one for relevance and actionability and delivers rated summaries directly to a Notion database.
 
-The agent runs on-demand — when I want to catch up on security news, I execute a single command and receive a curated, prioritized feed of the most important cybersecurity developments.
+The agent runs on-demand - when I want to catch up on security news, I execute a single command and receive a curated, prioritized feed of the most important cybersecurity developments.
 
-> **The problem I solved:** Security professionals are overwhelmed with information. This agent cuts through the noise by using AI to rate content based on actionability, threat relevance, and business impact — so you focus on what actually matters.
+> **The problem I solved:** Security professionals are overwhelmed with information. This agent cuts through the noise by using AI to rate content based on actionability, threat relevance and business impact - so you focus on what actually matters.
+
+<br>
+
+
+![Cybersecurity News Notion Page](https://github.com/user-attachments/assets/c7ad59fa-9531-4d7f-8530-273009c41e49)
+
 
 ---
 
@@ -75,10 +79,10 @@ flowchart LR
 
 ### Data Flow
 
-1. **RSS Fetcher** — Collects latest articles from all configured sources
-2. **Deduplicator** — Checks Notion to skip already-processed articles
-3. **AI Analyzer** — Claude analyzes each article for threat relevance, actionability, and assigns ratings
-4. **Notion Client** — Stores results with full metadata
+1. **RSS Fetcher** - Collects latest articles from all configured sources
+2. **Deduplicator** - Checks Notion to skip already-processed articles
+3. **AI Analyzer** - Claude analyzes each article for threat relevance, actionability, and assigns ratings
+4. **Notion Client** - Stores results with full metadata
 
 ### Component Diagram
 
@@ -189,12 +193,12 @@ Cybersecurity-News-Agent/
 
 ## 🧠 Skills Demonstrated
 
-- **Agentic AI Development** — Building autonomous tools with Claude Code
-- **MCP Integration** — Connecting AI to external services via Model Context Protocol
-- **Python Automation** — RSS parsing, API integration, data processing
-- **AI Prompt Engineering** — Structured analysis prompts for consistent output
-- **API Integration** — Notion API for persistent storage
-- **Cybersecurity Domain Knowledge** — Curating authoritative, relevant sources
+- **Agentic AI Development** - Building autonomous tools with Claude Code
+- **MCP Integration** - Connecting AI to external services via Model Context Protocol
+- **Python Automation** - RSS parsing, API integration, data processing
+- **AI Prompt Engineering** - Structured analysis prompts for consistent output
+- **API Integration** - Notion API for persistent storage
+- **Cybersecurity Domain Knowledge** - Curating authoritative, relevant sources
 
 ---
 
