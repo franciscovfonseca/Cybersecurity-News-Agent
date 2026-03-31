@@ -24,9 +24,11 @@ The agent runs on-demand - when I want to catch up on security news, I execute a
 
 <br>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/71bc9333-aa4c-4bd5-bec9-57604052ef44" alt="Cybersecurity News Notion Database" width="100%"/>
+</p>
 
-![Cybersecurity News Notion Page](https://github.com/user-attachments/assets/c7ad59fa-9531-4d7f-8530-273009c41e49)
-
+<p align="center"><em>Live Notion database populated with AI-analyzed cybersecurity news, sorted by threat priority</em></p>
 
 ---
 
