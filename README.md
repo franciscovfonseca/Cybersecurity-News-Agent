@@ -16,7 +16,7 @@
 
 ## 📌 Project Overview
 
-In this Project I built an **AI-powered cybersecurity news aggregator** using Claude Code that automatically collects articles from trusted security sources, analyzes each one for relevance and actionability and delivers rated summaries directly to a Notion database.
+In this project I built an **AI-powered cybersecurity news aggregator** that automatically collects articles from trusted security sources, analyzes each one for relevance and actionability and delivers rated summaries directly to a Notion database.
 
 The agent runs on-demand - when I want to catch up on security news, I execute a single command and receive a curated, prioritized feed of the most important cybersecurity developments.
 
@@ -28,28 +28,45 @@ The agent runs on-demand - when I want to catch up on security news, I execute a
   <img src="https://github.com/user-attachments/assets/71bc9333-aa4c-4bd5-bec9-57604052ef44" alt="Cybersecurity News Notion Database" width="100%"/>
 </p>
 
-<p align="center"><em>Live Notion database populated with AI-analyzed cybersecurity news, sorted by threat priority</em></p>
+<p align="center"><em>The agent fetches news → AI rates by threat severity → Results appear in Notion, ready to action</em></p>
+
+<br>
+
+---
+
+## 🎯 Why I Built This
+
+As someone working in cybersecurity, I found myself drowning in news from dozens of sources. I needed a way to:
+
+- **Filter signal from noise** - not every vulnerability matters to every organization
+- **Prioritize my reading** - focus on what's actively being exploited
+- **Build a knowledge base** - track trends and threats over time
+
+This project solves that problem while demonstrating practical AI integration and automation skills.
+
+<br>
 
 ---
 
 ## ✨ Features
 
 | Feature | Description |
-|---|---|
+|---------|-------------|
 | **Multi-Source Aggregation** | Pulls from 5 curated cybersecurity RSS feeds |
 | **AI-Powered Analysis** | Claude AI rates each article from S-Tier to D-Tier |
 | **Smart Labeling** | Automatic categorization with 25+ security-specific labels |
 | **Quality Scoring** | 1–100 actionability score based on threat relevance |
 | **Notion Integration** | Results stored in a structured, searchable database |
-| **On-Demand Execution** | Run when you want to catch up — no always-on infrastructure |
+| **On-Demand Execution** | Run when you want to catch up - no always-on infrastructure |
 | **Deduplication** | Skips articles already processed to avoid duplicates |
+
+<br>
 
 ---
 
 ## 🏗️ Architecture
 
 The agent follows a simple but powerful pipeline: **Collect → Analyze → Store**.
-
 ```mermaid
 flowchart LR
     subgraph Sources["📡 RSS Sources"]
@@ -83,11 +100,10 @@ flowchart LR
 
 1. **RSS Fetcher** - Collects latest articles from all configured sources
 2. **Deduplicator** - Checks Notion to skip already-processed articles
-3. **AI Analyzer** - Claude analyzes each article for threat relevance, actionability, and assigns ratings
+3. **AI Analyzer** - Claude analyzes each article for threat relevance, actionability and assigns ratings
 4. **Notion Client** - Stores results with full metadata
 
 ### Component Diagram
-
 ```mermaid
 flowchart TD
     subgraph "src/"
@@ -113,6 +129,8 @@ flowchart TD
     style D fill:#000000,color:#fff
 ```
 
+<br>
+
 ---
 
 ## ⭐ Rating System
@@ -120,19 +138,19 @@ flowchart TD
 The AI rates each article using a tier system based on actionability and threat relevance:
 
 | Tier | Label | Criteria | Action |
-|---|---|---|---|
+|------|-------|----------|--------|
 | 🔴 **S Tier** | Must Read Immediately | Active exploitation, critical CVE, major breach | Drop everything |
 | 🟠 **A Tier** | Read This Week | Important vulnerability, actionable guidance | Schedule time |
 | 🟡 **B Tier** | Read When Available | Educational, moderate relevance | Queue for later |
 | 🔵 **C Tier** | Low Priority | Niche topic, limited actionability | Skim or skip |
-| ⚪ **D Tier** | Skip | Marketing, outdated, or noise | Ignore |
+| ⚪ **D Tier** | Skip | Marketing, outdated or noise | Ignore |
 
 ### Rating Criteria
 
 The AI evaluates articles against these factors:
 
 | Factor | Weight | Description |
-|---|---|---|
+|--------|--------|-------------|
 | **Active Exploitation** | High | Is this being exploited in the wild? |
 | **Severity** | High | CVSS score, potential impact |
 | **Breadth of Impact** | Medium | How many organizations affected? |
@@ -140,12 +158,14 @@ The AI evaluates articles against these factors:
 | **Timeliness** | Medium | Is this breaking or old news? |
 | **Source Authority** | Low | Official advisory vs. blog post |
 
+<br>
+
 ---
 
 ## 📡 Data Sources
 
 | Source | Type | Content Focus |
-|---|---|---|
+|--------|------|---------------|
 | **CIS (MS-ISAC)** | Advisories | Security advisories, best practices |
 | **CISA** | Government | Official US alerts, KEV catalog |
 | **Krebs on Security** | Journalism | Investigative cybercrime reporting |
@@ -154,10 +174,12 @@ The AI evaluates articles against these factors:
 
 ---
 
-## 🏷️ Content Labels
+<details>
+<summary><strong>🏷️ Content Labels</strong> (click to expand)</summary>
+
+<br>
 
 Articles are automatically tagged with relevant categories:
-
 ```
 Vulnerabilities    Threat Intel      Malware           Ransomware
 Phishing           Data Breach       Cloud Security    Identity & Access
@@ -168,10 +190,13 @@ Financial Services Healthcare        Best Practices    Tools & Techniques
 Career             Industry News
 ```
 
+</details>
+
+<br>
+
 ---
 
 ## 📁 Repository Structure
-
 ```
 Cybersecurity-News-Agent/
 ├── README.md
@@ -191,23 +216,27 @@ Cybersecurity-News-Agent/
 └── LICENSE
 ```
 
+<br>
+
 ---
 
-## 🧠 Skills Demonstrated
+## 💡 What I Built & Learned
 
-- **Agentic AI Development** - Building autonomous tools with Claude Code
+- **Agentic AI Development** - Building autonomous tools with Claude AI
 - **MCP Integration** - Connecting AI to external services via Model Context Protocol
-- **Python Automation** - RSS parsing, API integration, data processing
-- **AI Prompt Engineering** - Structured analysis prompts for consistent output
-- **API Integration** - Notion API for persistent storage
+- **Python Automation** - RSS parsing, API integration, async data processing
+- **AI Prompt Engineering** - Structured analysis prompts for consistent, reliable output
+- **API Integration** - Notion API for persistent storage and retrieval
 - **Cybersecurity Domain Knowledge** - Curating authoritative, relevant sources
+
+<br>
 
 ---
 
 ## 🔮 Future Enhancements
 
 | Enhancement | Description |
-|---|---|
+|-------------|-------------|
 | **Scheduled Execution** | Daily automated runs via cron or cloud scheduler |
 | **Email Digest** | Morning summary of S-Tier and A-Tier articles |
 | **Slack Integration** | Post critical alerts to a security channel |
