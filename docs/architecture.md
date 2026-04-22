@@ -17,7 +17,7 @@ RSS Sources → Fetcher → Deduplicator → AI Analyzer → Notion Storage
 
 ## Data Flow
 
-1. **Fetch** — Collect articles from 5 RSS sources
-2. **Deduplicate** — Skip already-processed URLs
-3. **Analyze** — Claude AI rates and categorizes each article
-4. **Store** — Save results to Notion database
+1. **Fetch** - Collect articles from 5 RSS sources
+2. **Deduplicate** - Skip already-processed URLs
+3. **Analyze** - Claude AI rates and categorizes each article
+4. **Store** - Save results to Notion database
