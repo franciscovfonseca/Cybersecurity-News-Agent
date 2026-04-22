@@ -25,8 +25,10 @@ The agent runs on-demand - when I want to catch up on security news, I execute a
 
 <br>
 
+<br>
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/71bc9333-aa4c-4bd5-bec9-57604052ef44" alt="Cybersecurity News Notion Database" width="100%"/>
+  <img src="docs/notion-screenshot.png" alt="Cybersecurity News Notion Database" width="100%"/>
 </p>
 
 <p align="center"><em>The agent fetches news - AI rates by threat severity - Results appear in Notion, ready to action</em></p>
@@ -256,7 +258,8 @@ Cybersecurity-News-Agent/
 ├── .env.example
 ├── .gitignore
 ├── docs/
-│   └── banner.png
+│   ├── banner.png
+│   └── notion-screenshot.png
 ├── src/
 │   ├── agent.py
 │   ├── rss_fetcher.py
