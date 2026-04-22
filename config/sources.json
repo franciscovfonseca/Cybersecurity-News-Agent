@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "name": "CIS Advisories",
+      "url": "https://www.cisecurity.org/feed/advisories",
+      "type": "advisory"
+    },
+    {
+      "name": "CISA Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "type": "advisory"
+    },
+    {
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "type": "blog"
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "type": "news"
+    },
+    {
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "type": "news"
+    }
+  ]
+}

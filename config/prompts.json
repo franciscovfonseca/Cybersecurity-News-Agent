@@ -1,0 +1,14 @@
+{
+  "system": "You are a senior cybersecurity intelligence analyst. Evaluate security news articles and rate them based on relevance and actionability. Respond with valid JSON only.",
+
+  "analysis": "Analyze this cybersecurity article:\n\nTitle: {title}\nSource: {source}\nPublished: {published}\nContent: {content}\n\nRespond with JSON:\n{{\n    \"rating\": \"S Tier|A Tier|B Tier|C Tier|D Tier\",\n    \"quality_score\": <1-100>,\n    \"summary\": \"<one sentence>\",\n    \"rating_explanation\": \"<why this rating>\",\n    \"labels\": [\"<label1>\", \"<label2>\"]\n}}\n\nRATING GUIDE:\n- S Tier: Active exploitation, critical CVE, major breach\n- A Tier: Important vulnerability, actionable guidance\n- B Tier: Educational, moderate relevance\n- C Tier: Niche topic, limited actionability\n- D Tier: Marketing content, outdated, minimal value\n\nVALID LABELS:\nVulnerabilities, Threat Intel, Malware, Ransomware, Phishing, Data Breach, Cloud Security, Identity & Access, Network Security, Endpoint Security, Compliance, Privacy, Incident Response, Patch Management, Zero-Day, APT, Supply Chain, Critical Infrastructure, Government, Financial Services, Healthcare, Best Practices, Tools & Techniques, Career, Industry News",
+
+  "labels": [
+    "Vulnerabilities", "Threat Intel", "Malware", "Ransomware", "Phishing",
+    "Data Breach", "Cloud Security", "Identity & Access", "Network Security",
+    "Endpoint Security", "Compliance", "Privacy", "Incident Response",
+    "Patch Management", "Zero-Day", "APT", "Supply Chain", "Critical Infrastructure",
+    "Government", "Financial Services", "Healthcare", "Best Practices",
+    "Tools & Techniques", "Career", "Industry News"
+  ]
+}
